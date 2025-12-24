@@ -1,5 +1,9 @@
 const axios = require("axios");
 
+if (!global.client.handleReply) {
+  global.client.handleReply = [];
+}
+
 module.exports = {
   config: {
     name: "spotify",
